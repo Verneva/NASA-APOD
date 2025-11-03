@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body class="box">
+    <main>
+    <header>
+        <h1>NASA Astronomy Picture of the Day</h1>
+        
+    </header>
+    <div>
+        <p>Enter a date after June 16, 1995 to view the corresponding NASA picture of the day</p>
+
+    </div>
+    
+    <div class ="container">
+        <input type="date" id="imageDate" min="1995-06-15"/>
+
+    <button onclick="fetchData()">Submit</button><br>
+
+    </div>
+
+    <div class ="title">
+
+    <h2 id="imageTitle" >  </h2>
+    </div>
+
+    <div class="image">
+
+    <img src="" alt="NASA image of the day" id="spaceImage" style="display: none;">
+    </div>
+
+    <div class="imageInfo">
+
+    <p id="imageExplanation"></p>
+
+    </div>
+    
+
+    <script src="nasa.js"></script>
+    <!-- place script tag at the end of the text to limit rendering time -->
+</main>
+</body>
+</html>
